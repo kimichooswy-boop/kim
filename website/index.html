@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">         
+    <link rel="icon" href="place-your-tab-icon-here.jpg"> 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"
+  />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/shoelace.js"></script>
+    <script defer src="app.js"></script>
+
+
+    <!-- lightgallery plugins -->
+    <link type="text/css" rel="stylesheet" href="lightbox.css">
+</head>
+
+<body>
+    <title>DESIGN PORTFOLIO</title>
+
+<!-- SVG Animation -->
+    <svg 
+    id="logo"
+    width="925" height="283" viewBox="0 0 925 283" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M870.525 170.5C880.915 170.5 890.039 172.944 897.794 177.927C905.584 182.769 911.641 189.359 915.944 197.648C920.248 205.943 922.374 215.245 922.374 225.5C922.374 235.755 920.248 245.057 915.944 253.352C911.644 261.637 905.593 268.27 897.815 273.21L897.808 273.215C890.049 278.104 880.92 280.5 870.525 280.5C860.223 280.5 851.058 278.102 843.117 273.231L843.084 273.21C835.306 268.27 829.255 261.637 824.955 253.352C820.651 245.057 818.525 235.755 818.525 225.5C818.525 215.245 820.651 205.943 824.955 197.648C829.258 189.359 835.315 182.769 843.105 177.927C851.047 172.952 860.216 170.5 870.525 170.5ZM870.525 182.25C862.324 182.25 856.058 185.774 851.494 193.075C846.945 200.414 844.525 211.128 844.525 225.5C844.525 239.86 846.941 250.627 851.493 258.072C856.05 265.266 862.313 268.75 870.525 268.75C878.739 268.75 885.005 265.263 889.562 258.063C894.208 250.623 896.675 239.86 896.675 225.5C896.675 211.129 894.204 200.421 889.562 193.087L889.559 193.081L889.555 193.075C884.991 185.774 878.725 182.25 870.525 182.25Z" stroke="white" stroke-width="5"/>
+<path d="M789.647 173.5V255.5C789.647 259.77 790.216 263.029 791.218 265.4C791.92 266.82 793.6 268 797.647 268H801.647V277.5H781.147C775.614 277.5 771.042 276.068 768.453 272.389C767.209 270.621 766.407 268.26 765.901 265.516C765.389 262.741 765.147 259.39 765.147 255.5V173.5H789.647Z" stroke="white" stroke-width="5"/>
+<path d="M677.404 173.5C683.006 173.5 687.629 174.969 690.122 178.796C692.484 182.277 693.404 188.07 693.404 195.5V265.75H745.154V277.5H668.904V195.5C668.904 191.204 668.278 188.019 667.202 185.784L667.178 185.735L667.156 185.685C666.529 184.222 664.955 183 660.904 183H656.904V173.5H677.404Z" stroke="white" stroke-width="5"/>
+<path d="M588.073 170.5C598.464 170.5 607.588 172.944 615.343 177.927C623.133 182.769 629.19 189.359 633.492 197.648C637.797 205.943 639.923 215.245 639.923 225.5C639.923 235.755 637.797 245.057 633.492 253.352C629.192 261.637 623.142 268.27 615.363 273.21L615.357 273.215C607.597 278.104 598.469 280.5 588.073 280.5C577.771 280.5 568.607 278.102 560.666 273.231L560.633 273.21C552.855 268.27 546.804 261.637 542.504 253.352C538.2 245.057 536.073 235.755 536.073 225.5C536.073 215.245 538.2 205.943 542.504 197.648C546.806 189.359 552.863 182.769 560.654 177.927C568.596 172.952 577.764 170.5 588.073 170.5ZM588.073 182.25C579.873 182.25 573.607 185.774 569.043 193.075C564.494 200.414 562.073 211.128 562.073 225.5C562.073 239.86 564.49 250.627 569.042 258.072C573.599 265.266 579.862 268.75 588.073 268.75C596.288 268.75 602.554 265.263 607.111 258.063C611.757 250.623 614.224 239.86 614.224 225.5C614.224 211.129 611.753 200.421 607.111 193.087L607.108 193.081L607.104 193.075C602.54 185.774 596.274 182.25 588.073 182.25Z" stroke="white" stroke-width="5"/>
+<path d="M502.264 173.5C505.937 173.5 509.132 174.113 511.517 175.668L511.518 175.667C513.763 177.039 515.387 178.962 516.293 181.394H516.294C517.11 183.493 517.514 185.701 517.514 188V203.25H508.014V200.75C508.014 194.601 506.45 190.905 503.981 188.885L503.949 188.858L503.918 188.831C501.33 186.567 497.405 185.25 491.764 185.25H473.414V218.5H506.414V230.25H473.414V277.5H448.914V195.5C448.914 191.204 448.288 188.019 447.212 185.784L447.188 185.735L447.166 185.685C446.539 184.222 444.965 183 440.914 183H436.914V173.5H502.264Z" stroke="white" stroke-width="5"/>
+<path d="M424.035 173.5V185.25H392.685V277.5H368.185V185.25H360.035C355.16 185.25 351.603 186.485 349.077 188.686L349.059 188.7L349.042 188.716C346.791 190.604 345.285 194.316 345.285 200.75V203.25H335.785V188C335.785 185.701 336.188 183.493 337.005 181.394H337.005C337.908 178.974 339.521 177.059 341.75 175.688V175.687C341.752 175.685 341.756 175.683 341.758 175.682C341.766 175.677 341.773 175.672 341.781 175.667V175.668C344.232 174.131 347.403 173.5 351.035 173.5H424.035Z" stroke="white" stroke-width="5"/>
+<path d="M272.104 184.5C270.973 184.5 269.842 184.547 268.711 184.642C267.592 184.735 266.658 184.871 265.896 185.04L265.811 185.06L265.724 185.072L264.854 185.202V221.2H271.354C274.205 221.2 277.027 220.622 279.836 219.444C282.449 218.348 284.625 216.535 286.373 213.913L286.378 213.905L286.384 213.897C288.114 211.344 289.104 207.737 289.104 202.85C289.103 197.935 288.153 194.382 286.523 191.937L286.502 191.905C284.734 189.166 282.599 187.323 280.109 186.244C277.395 185.068 274.732 184.5 272.104 184.5ZM325.153 276.545L323.771 277.236C322.576 277.834 320.767 278.222 318.673 278.521L318.674 278.522C316.559 278.84 314.485 279 312.453 279C306.631 279 301.199 277.287 296.206 273.923L296.18 273.905L296.154 273.888C291.246 270.397 286.284 264.358 281.219 256.052L281.214 256.043L281.208 256.034L266.937 232.2H264.854V277.5H240.203V195.5C240.203 191.204 239.577 188.019 238.501 185.784L238.477 185.735L238.455 185.685C237.828 184.222 236.254 183 232.203 183H228.203V173.5H272.104C275.007 173.5 278.288 173.707 281.938 174.111C285.692 174.426 289.437 175.155 293.171 176.291H293.172C297.025 177.361 300.572 179.023 303.8 181.276C307.222 183.494 309.934 186.431 311.92 190.053L312.12 190.408C314.155 194.111 315.103 198.548 315.104 203.6C315.104 209.202 313.752 214.051 310.874 217.97C308.229 221.607 304.814 224.465 300.671 226.536L300.659 226.542L300.646 226.548C297.836 227.915 294.99 229.062 292.112 229.988L306.197 253.464L306.203 253.474C309.959 259.799 313.22 263.635 315.925 265.41C319.016 267.439 321.385 268.478 323.101 268.79L325.153 269.163V276.545Z" stroke="white" stroke-width="5"/>
+<path d="M159.372 170.5C169.763 170.5 178.887 172.944 186.642 177.927C194.432 182.769 200.489 189.359 204.791 197.648C209.096 205.943 211.222 215.245 211.222 225.5C211.222 235.755 209.096 245.057 204.791 253.352C200.491 261.637 194.441 268.27 186.662 273.21L186.655 273.215C178.896 278.104 169.767 280.5 159.372 280.5C149.07 280.5 139.906 278.102 131.965 273.231L131.932 273.21C124.154 268.27 118.103 261.637 113.803 253.352C109.498 245.057 107.372 235.755 107.372 225.5C107.372 215.245 109.498 205.943 113.803 197.648C118.105 189.359 124.162 182.769 131.952 177.927C139.894 172.952 149.063 170.5 159.372 170.5ZM159.372 182.25C151.172 182.25 144.905 185.774 140.342 193.075C135.793 200.414 133.372 211.128 133.372 225.5C133.372 239.86 135.789 250.627 140.341 258.072C144.897 265.266 151.161 268.75 159.372 268.75C167.587 268.75 173.852 265.263 178.409 258.063C183.055 250.623 185.523 239.86 185.523 225.5C185.523 211.129 183.051 200.421 178.409 193.087L178.406 193.081L178.403 193.075C173.839 185.774 167.573 182.25 159.372 182.25Z" stroke="white" stroke-width="5"/>
+<path d="M46.25 173.5C49.0622 173.5 52.2523 173.708 55.8105 174.114C59.4762 174.432 63.1773 175.164 66.9111 176.304H66.9121C70.8707 177.481 74.5197 179.25 77.8467 181.611C81.2967 184.06 84.0461 187.322 86.1104 191.333C88.255 195.397 89.25 200.38 89.25 206.15C89.25 211.643 88.2469 216.432 86.0967 220.393L86.0898 220.406L86.082 220.42C84.017 224.115 81.3287 227.147 78.0156 229.474L78.0166 229.475C74.9165 231.719 71.5895 233.439 68.041 234.622C64.6131 235.765 61.3083 236.555 58.1309 236.979L58.0938 236.983L58.0576 236.986C55.1175 237.29 52.6718 237.45 50.75 237.45H39V277.5H14.5V195.5C14.5 191.204 13.8739 188.019 12.7979 185.784L12.7734 185.735L12.752 185.685C12.125 184.222 10.5511 183 6.5 183H2.5V173.5H46.25ZM46.25 184.5C45.1195 184.5 43.9886 184.547 42.8574 184.642C41.7381 184.735 40.8042 184.871 40.042 185.04L39.957 185.06L39.8711 185.072L39 185.202V226.45H45.5C48.5592 226.45 51.4683 225.868 54.248 224.708C56.779 223.558 58.8951 221.573 60.5674 218.58L60.5811 218.557L60.5947 218.532C62.2746 215.676 63.25 211.386 63.25 205.4C63.25 199.407 62.2726 195.185 60.6123 192.445L60.5889 192.408L60.5674 192.369C58.8821 189.354 56.8117 187.436 54.4062 186.394L54.3594 186.374L54.3135 186.352C51.7502 185.114 49.0711 184.5 46.25 184.5Z" stroke="white" stroke-width="5"/>
+<path d="M672.352 5.5C678.226 5.5 683.191 6.26771 687.113 7.94336L687.114 7.94238C687.117 7.9435 687.119 7.94517 687.122 7.94629C687.127 7.94843 687.133 7.95001 687.138 7.95215L687.137 7.95312C691.082 9.60122 694.357 12.0839 696.917 15.3916L744.102 70.2588V5.5H756.602V109.95H746.048L745.299 109.07L686.102 39.542V109.5H673.602V26C673.602 22.632 672.768 19.9737 671.234 17.875L671.215 17.8496L671.197 17.8232C670.11 16.2527 667.638 15 662.602 15H659.352V5.5H672.352Z" stroke="white" stroke-width="5"/>
+<path d="M590.996 2.5C600.574 2.5 608.621 3.76787 615.024 6.42871C621.024 8.82845 625.717 11.7059 628.877 15.167L629.178 15.5039L629.214 15.5449L629.248 15.5879C631.634 18.5704 632.911 22.3382 633.239 26.7129C633.543 30.7644 633.696 34.5277 633.696 38V40.5H624.659L624.248 38.5059C622.415 29.6323 619.116 23.6045 614.63 19.998L614.618 19.9893L614.606 19.9795C610.079 16.2511 603.801 14.25 595.496 14.25C589.839 14.25 585.197 15.3781 581.459 17.5078L580.765 17.9277C577.337 20.0734 574.455 22.9435 572.116 26.5742C569.679 30.5142 567.878 34.9988 566.734 40.0518C565.577 45.162 564.996 50.4767 564.996 56C564.996 67.9276 566.429 77.0973 569.144 83.665C571.996 90.3201 575.693 94.8362 580.114 97.4951C584.708 100.156 589.817 101.5 595.496 101.5C599.878 101.5 603.539 101.158 606.512 100.508C608.964 99.9715 611.206 99.2855 613.246 98.458V73.4004C613.246 71.0589 613.581 68.7274 614.242 66.4131L614.257 66.3613L614.274 66.3096C615.138 63.7193 616.771 61.4189 619.023 59.3916C621.408 57.1463 624.7 55.5069 628.701 54.3486L628.709 54.3467L628.718 54.3438C632.928 53.1564 638.333 52.5996 644.846 52.5996H647.346V61.3496H644.846C642.151 61.3497 640.606 62.2769 639.64 63.8867C638.467 65.8416 637.746 68.8271 637.746 73.0996V101.361L636.538 102.091C630.525 105.719 624.141 108.366 617.394 110.027C610.671 111.682 603.368 112.5 595.496 112.5C587.402 112.5 579.877 111.098 572.949 108.264L572.928 108.255L572.907 108.246C566.123 105.324 560.157 101.297 555.028 96.168L555.02 96.1582L555.01 96.1494C549.981 91.0157 546.056 85.0452 543.237 78.2588L543.232 78.2471V78.2461C540.402 71.3264 538.996 63.9029 538.996 56C538.996 46.0322 541.128 36.972 545.439 28.875C549.749 20.7822 555.811 14.3491 563.597 9.61426L563.61 9.60645C571.548 4.84389 580.704 2.5 590.996 2.5Z" stroke="white" stroke-width="5"/>
+<path d="M510.418 5.5V87.5C510.418 91.77 510.988 95.0285 511.99 97.4004C512.691 98.8201 514.371 100 518.418 100H522.418V109.5H501.918C496.385 109.5 491.813 108.068 489.224 104.389C487.98 102.621 487.178 100.26 486.672 97.5156C486.16 94.7408 485.918 91.3904 485.918 87.5V5.5H510.418Z" stroke="white" stroke-width="5"/>
+<path d="M418.286 2.79999C423.996 2.79999 429.515 3.52733 434.835 4.98651L434.836 4.98553C440.289 6.45354 444.918 8.63536 448.641 11.592C452.542 14.6899 454.687 18.6225 454.687 23.3V43.3498H445.862L445.519 41.2531C443.856 31.0788 440.79 24.3241 436.678 20.4748C432.523 16.5853 427.024 14.5501 419.937 14.55C414.946 14.55 411.266 15.7438 408.635 17.8713C406.174 19.9386 404.886 22.7494 404.886 26.5998C404.886 30.1758 406.047 32.8822 408.278 34.9582C411.017 37.4111 414.666 40.0118 419.266 42.7521H419.265L437.704 53.6955L438.984 54.4601C445.275 58.2848 450.077 62.1642 453.236 66.1349C456.831 70.4262 458.586 75.6489 458.586 81.6496C458.586 90.9818 455.01 98.532 447.861 104.031C440.759 109.494 430.836 112.05 418.437 112.05C412.818 112.05 407.298 111.322 401.886 109.864C396.433 108.396 391.804 106.215 388.081 103.258C384.18 100.16 382.036 96.2274 382.036 91.55V71.5002H390.881L391.207 73.6203C392.769 83.7746 395.832 90.5081 400.02 94.3508C404.344 98.2277 410.335 100.3 418.286 100.3C423.656 100.3 427.646 99.1677 430.494 97.1574C433.246 95.1868 434.687 92.3457 434.687 88.2502C434.687 84.5504 433.507 81.6559 431.219 79.3674L431.187 79.3361L431.156 79.3039C428.665 76.6276 425.12 73.8657 420.444 71.0402V71.0392L401.997 59.9426V59.9416C395.048 55.8508 389.897 51.5237 386.806 46.8869C383.708 42.2395 382.187 36.8976 382.187 30.9504C382.187 22.3135 385.517 15.3133 392.165 10.216L392.181 10.2043C398.843 5.18009 407.63 2.79999 418.286 2.79999Z" stroke="white" stroke-width="5"/>
+<path d="M340.945 5.5C344.619 5.50004 347.813 6.11305 350.197 7.66797L350.198 7.66699C352.457 9.04732 354.088 10.984 354.991 13.4355H354.99C355.796 15.5223 356.195 17.7164 356.195 20V35.25H346.695V32.75C346.695 26.7257 345.142 22.9902 342.628 20.8564L342.599 20.8311C340.011 18.5671 336.086 17.2501 330.445 17.25H308.795V49.75H347.795V61.5H308.795V97.75H331.945C337.079 97.7499 341.24 96.6324 344.56 94.5361C347.843 92.4255 350.828 88.4621 353.324 82.2217L354.229 79.959L356.514 80.8057L360.563 82.3057L362.9 83.1719L362.042 85.5117L357.691 97.3613C356.519 100.756 354.93 103.61 352.857 105.816C350.46 108.496 346.684 109.5 342.295 109.5H284.295V27.5C284.295 23.2036 283.669 20.0191 282.593 17.7842L282.568 17.7354L282.547 17.6846C281.92 16.222 280.346 15 276.295 15H272.295V5.5H340.945Z" stroke="white" stroke-width="5"/>
+<path d="M191.024 5.5C211.916 5.5 228.052 9.90231 238.988 19.1396H238.987C250.022 28.3752 255.475 41.065 255.475 56.9004C255.475 67.1829 253.134 76.331 248.38 84.2637L248.381 84.2646C243.71 92.2255 236.828 98.4439 227.843 102.937L227.821 102.946C218.789 107.357 207.789 109.5 194.925 109.5H159.725V27.5C159.725 23.2035 159.099 20.0191 158.022 17.7842L157.998 17.7354L157.977 17.6846C157.35 16.222 155.776 15 151.725 15H147.725V5.5H191.024ZM192.975 16.5C191.533 16.5 190.145 16.5475 188.811 16.6426C187.585 16.737 186.473 16.8775 185.472 17.0596L185.417 17.0693L185.362 17.0771L184.225 17.2314V97.8623L185.423 98.0811C187.357 98.3541 189.864 98.5 192.975 98.5H194.475C201.036 98.5 206.755 96.8668 211.715 93.6523C216.682 90.4326 220.643 85.808 223.568 79.6738C226.473 73.5831 227.975 66.2181 227.975 57.5C227.975 48.9913 226.476 41.7236 223.568 35.626L223.562 35.6123L223.555 35.5977C220.733 29.4839 216.778 24.8127 211.705 21.4922L211.688 21.4805C206.743 18.1839 200.937 16.5 194.175 16.5H192.975Z" stroke="white" stroke-width="5"/>
+</svg>
+
+
+    <div class="parent1">
+
+        <!-- Home Page -->
+        <!-- Navigation Bar -->
+        <section class="home-section" id="home"></section>           
+        <div class="topnav">
+            
+            
+                <a href="#home">Home</a>
+                <a href="#shoppingcomplex">Shopping Complex</a>
+                <a href="#cafe">Cafe</a>
+                <a href="#giftshop">Gift Shop</a>
+                <a href="#adcampaign">Ad Campaign</a>
+                <a href="#magazine">Catalogue</a>
+                <a href="#poster">Poster</a>
+        </div>
+
+        <div class="child1">
+            <sl-dialog label="Contact" class="dialog-overview">
+                <p> Call: (+230) 58369092 </p>
+                <p> Email: kimlee.sowanyuen@icloud.com </p>
+            </sl-dialog>
+                
+            <sl-button variant="default" size="small" style="width: 15%; margin-bottom: 1rem;" pill>Contact</sl-button>
+                    
+            <script>
+                const dialog = document.querySelector('.dialog-overview');
+                const openButton = dialog.nextElementSibling;
+                const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+                  
+                openButton.addEventListener('click', () => dialog.show());
+                closeButton.addEventListener('click', () => dialog.hide());
+            </script> 
+        </div>      
+             
+        <!-- Home Page Content -->
+        <!-- Javascript Animation -->
+        <div class="title1">
+            <h1 class="fancy">Kim Lee So Wan Yuen</h1>
+                <script src="./app.js"></script>
+            </div>
+            
+            <!-- CSS Animation -->
+            <div class="parent2">
+                <div class="child2">
+                    <section id="section-1" class="animate__animated animate__slideInUp ">
+                        <img src="images/purple.png" width=100% alt="purple.png">
+                    </section>
+                </div>
+    
+                <div class="child3">
+                    <section id="section-2" class="animate__animated animate__slideInUp">
+                            <img src="images/gold.png" width=100% alt="gold.png">
+                    </section>
+                </div>
+    
+                <div class="child4">
+                    <section id="section-3" class="animate__animated animate__slideInUp">
+                        <img src="images/silver.png" width=100% alt="silver.png">
+                    </section>
+                </div>
+    
+                <div class="child5">
+                    <section id="section-4" class="animate__animated animate__slideInUp">
+                        <img src="images/black.png" width=100% alt="black.png">
+                    </section>
+                </div>       
+            </div>
+
+            <!-- Divider -->
+        <sl-divider style="--width: 100%;"></sl-divider> 
+        <sl-divider style="--color: white;"></sl-divider>
+        <div style="text-align: center;">
+        </div>
+        
+        <!-- Specifications Page -->
+        <div class="frame">
+        <section class="shoppingcomplex-section" id="shoppingcomplex">
+                <div class="title">Alta Shopping Complex   
+            </div>
+            <div class="parent8">
+                    <div class="child16">
+                        
+                            <img src="images/img2.png" width=110% alt="img2.png">
+                        
+                    </div>
+
+                    <div class="child17">
+                           Reflective of class and sophistication, Alta offers a high-end retail experience, celebrating the latest innovative fashion, from prestigious designer labels. Situated in Central Flacq, the shopping complex consists of a modern structure featuring 6 separate levels – 2 levels of underground parking, 3 levels of retail outlets, bars and restaurants, and a rooftop level with additional parking. 
+                    </div>
+            </div>
+
+            <div class="parent9">
+                    <div class="child18">
+                        The external area features large grassed areas with ample seating and a large lake that is home to an array of local flora and fauna.
+                        This luxury and exclusive establishment is represented by the lily flower, symbol of nobility, and visualised through a logo and pattern that can be found on packagings, bags and banners, reinforcing the brand identity.                         
+                    </div>
+
+                    <div class="child19">
+                        <img src="images/img4.png" width=100% alt="img4.png">
+                    </div>
+            </div>
+        
+            <!-- Pop-up Gallery -->
+            <div class="container">
+                <div class="image-container">
+                    <a href="images/img1.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img1.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img3.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img3.png" alt=""></div>
+                    </a>
+
+                    <a href="images/pic1.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/pic1.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img6.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img6.png" alt=""></div>
+                    </a>
+                    
+                    <a href="images/img5.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img5.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img7.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img7.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img8.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img8.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img9.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img9.png" alt=""></div>
+                    </a>
+                    
+                    
+                </div>
+                </div>  
+            </div>  
+            
+            <script>
+                document.querySelectorAll('.image-container img').forEach(image =>{
+                    image.onclick = () => {
+                    document.querySelector('.popup-image').style.display = 'block';
+                    document.querySelector('.popup-image img').src = image.getAttribute('src');
+                    }
+                });
+
+                document.querySelector('.popup-image span').onclick = () =>{
+                    document.querySelector('.popup-image').style.display = 'none';
+                }
+            </script>
+        </section>
+        
+        <!-- Dynamic Island Page -->
+          <section class="cafe-section" id="cafe">
+            <div class="frame1">
+                <div class="title">
+                    Olive Bird Cafe
+                </div>
+                    <div class="parent20">
+                        <div class="child20">
+                            <img src="images/img10.png" width=120% height="100%" alt="img10.png">
+                        </div>
+                
+
+                        <div class="child21">
+                            <p>
+                                Olive Bird is a cafe, located at Ebene Commercial Centre, a prime location targeting office workers in need of a coffee boost. The journey of the owner Sam Garny, as a coffee artists that has travelled all over the world to learn everything that has to be known about coffee, is reflected through the café’s menu.
+                            </p>
+                            <p>
+                                The name of the cafe and its logo were inspired by the Olive-backed Sunbird, which helps in the pollination of coffee plants. It stands out as it gives customers the feeling of travelling through the exotic-tasting coffees and meals, taking them away from the mundane and repetitive office worklife.                    
+                            </p>
+                        </div>
+                    </div>
+
+                
+            
+                <!-- Pop-up Gallery -->
+                <div class="container">
+                    <div class="image-container">
+                        <a href="images/img16.png" data-lightbox="info" data-title="Caption1">
+                            <div class="image"><img src="images/img16.png" alt=""></div>
+                        </a>
+                    
+
+                        <a href="images/img13.png" data-lightbox="info" data-title="Caption1">
+                            <div class="image"><img src="images/img13.png" alt=""></div>
+                        </a>
+                    
+                        <a href="images/img12.png" data-lightbox="info" data-title="Caption1">
+                            <div class="image"><img src="images/img12.png" alt=""></div>
+                        </a>
+
+                        <a href="images/img14.png" data-lightbox="info" data-title="Caption1">
+                            <div class="image"><img src="images/img14.png" alt=""></div>
+                        </a>
+
+                        <a href="images/img11.png" data-lightbox="info" data-title="Caption1">
+                         <div class="image"><img src="images/img11.png" alt=""></div>
+                        </a>
+                    
+                        <a href="images/img15.png" data-lightbox="info" data-title="Caption1">
+                            <div class="image"><img src="images/img15.png" alt=""></div>
+                        </a>
+
+                    </div> 
+                </div>
+            </div>
+            
+            <script>
+                document.querySelectorAll('.image-container img').forEach(image =>{
+                    image.onclick = () => {
+                    document.querySelector('.popup-image').style.display = 'block';
+                    document.querySelector('.popup-image img').src = image.getAttribute('src');
+                    }
+                });
+
+                document.querySelector('.popup-image span').onclick = () =>{
+                    document.querySelector('.popup-image').style.display = 'none';
+                }
+            </script>
+        </section>
+
+        <!-- Camera Page -->
+        <section class="giftshop-section" id="giftshop">
+            <div class="title4">Cutesy Panda
+            </div>
+
+            <div class="parent12">
+                    <div class="child22">
+                        <img src="images/img17.png" width=100% alt="img17.png">
+                    </div>
+
+                    <div class="child23">
+                       Stemming from her undying love for pandas, Mrs Neuk Moy Ah-Poa desired a gift shop that revolved around her favourite animal. Based in Plaine Magnien, the shop proposes a variety of items that will satisfy customers of all ages.
+
+                        The brand identity revolves around pandas and bamboos. The aesthetic is quite feminine and playful, creating a sense of warmth and approachability.
+                    </div>
+            </div>
+
+            <div class="title5">This project involved working with a real client, resulting in learning how to create and adapt to what the client wants, how to communicate with them and integrate their feedback. It was definitely a different experience, as the most important feedback came from the client, who does not have any background or knowledge in design, in contrast to my tutors and peers who were the ones giving me feedbacks, in my previous projects.</div>
+
+            <!-- Pop-up Gallery -->
+            <div class="container">
+               <div class="child25"> 
+                <div class="image-container">
+
+                    <a href="images/img18.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img18.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img19.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img19.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img20.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img20.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img21.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img21.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img22.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img22.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img23.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img23.png" alt=""></div>
+                    </a>
+                    </div>
+                    
+                </div>
+        </section>
+
+        <!-- Divider -->
+        <sl-divider style="--width: 100%;"></sl-divider> 
+        <sl-divider style="--color: white;"></sl-divider>
+        <div style="text-align: center;">
+        </div>
+
+         <!-- Camera Page -->
+        <section class="adcampaign-section" id="adcampaign">
+            <div class="frame">
+
+            <div class="title">Huggies Ultra Dry Nappies
+            </div>
+
+            <!-- Pop-up Gallery -->
+            <div class="container">
+                <div class="child24">
+                <div class="image-container">
+                    <a href="images/img24.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img24.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img25.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img25.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img26.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img26.png" alt=""></div>
+                    </a>
+                </div>
+            </div>
+            </div>
+
+            <div class="title3">
+                The advertising campaign consists of 3 A4 print ads, for the Ultra Dry Nappies of the brand Huggies. As a product for babies, the concept is designed to reflect innocence, which is reinforced by the use of soft pastel colours and cuteness bias, created through the visual of babies and animals that would immediately speak to the soft spot of the target audience - the parents. The ads each showcase the baby in a different weather and position, as a way to demonstrate the adaptability of the diaper in different temperatures and movements.
+            </div>
+
+            </div>
+            
+        </section>
+
+
+        <!-- Brightness Page -->
+        <section class="magazine-section" id="magazine">
+            <div class="frame1">
+                <div class="title">High Heels Catalogue</div>
+               
+                <div class="parent5">
+                    <div class="child8">
+                        
+                            <img src="images/img27.png" width=60% alt="img27.png">
+                        
+                    </div>
+
+                    <div class="child9">
+                        <div class="title3">
+                            The High Heel Fashion Guide is an informative catalogue dedicated to high heels. From fashion history to fashion tips, the catalogue is a source of enjoyment for fashion lovers and enthusiasts, wanting to learn in a fun and colourful way.
+                        </div>
+
+                        <div class="title3">
+                            The catalogue consists of 32 pages with a matte finish, including the front and back covers.There are 14 pairs of shoes of different category, which are each featured on a dedicated double page spread with information. The catalogue is in A4 format (210 x 297 mm) and portrait orientation, with the cover having a thick 250 GSM for durability, while inner papers have a 150 GSM.
+                        </div>
+                </div>
+                </div>
+
+                <!-- Pop-up Gallery -->
+            <div class="container">
+                <div class="image-container">
+                    <a href="images/img28.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img28.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img29.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img29.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img30.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img30.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img31.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img31.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img32.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img32.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img33.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img33.png" alt=""></div>
+                    </a>
+                    
+                </div>
+            </div>
+                
+            
+        </section>
+
+         <!-- Brightness Page -->
+        <section class="poster-section" id="poster">
+            <div class="title4">Movie Festival Posters</div>
+            
+                        <div class="title6">
+                            The Curtin Student Guild is organising a film festival. The lineup is made up of 8 movies, all related to school, giving the festival the name of School Life. The schedule poster includes all the information regarding the movie lineup, the venue, time and sponsors. It also uses basic shapes to illustrate a connection between school and movies through a whiteboard and film tapes.
+                        </div>
+
+                        <!-- Pop-up Gallery -->
+            <div class="container">
+                <div class="image-container">
+                    <a href="images/img34.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img34.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img35.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img35.png" alt=""></div>
+                    </a>
+
+                    <a href="images/img36.png" data-lightbox="info" data-title="Caption1">
+                        <div class="image"><img src="images/img36.png" alt=""></div>
+                    </a>
+                    
+                </div>
+                    </div>
+                    
+                    <div class="title7">
+                            Two A3 movie posters, of the most popular movies are made to advertise the event. Clueless and High School Musical, being the most requested movies from Curtin University students, were chosen to further advertise the event. The visual is inspired by the style of colouring books for a fun and nostalgic effect, with the main characters depicted during iconic scenes of the movies.
+                    </div>
+                
+            
+        </section> 
+
+        <!-- Divider -->
+        <div class="parent11">
+        <sl-divider style="--width: 100%;"></sl-divider> 
+        <sl-divider style="--color: white;"></sl-divider>
+        <div style="text-align: center;">
+        </div>
+        </div>
+        
+        <!-- Contact Page -->
+        <section class="contact-section" id="contact">
+            <div class="title4">Thank You!</div>
+            <div class="parent7">
+                    <div style="font-size: 50px;">
+                                            </div>
+                </div>
+            </div>
+        </section>
+                 
+    </div>
+    
+    <script src="main.js"></script>
+    <script src="lightbox-plus-jquery.js"></script>
+</body>
+<script defer src="app.js"></script>
+</html>
